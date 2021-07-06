@@ -1,0 +1,120 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.col-header {
+    width: 150px;
+    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.item {
+    width: 150px;
+    height: 66px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    background: #f7f6f7;
+    padding: 0.8rem 1rem;
+    color: #828282;
+    text-align: center;
+    cursor: grab;
+    box-shadow: 3px 4px 12px #00000030;
+    margin-bottom: 15px;
+}
+
+
+.item:active {
+    cursor: grabbing;
+}
+
+.placeholder {
+    width: 150px;
+    height: 66px;
+    margin-bottom: 10px;
+}
+
+.start {
+    background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+    background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+    background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+@keyframes finished {
+    0% {
+    }
+    31% {
+        transform: translateY(-20%);
+        background: linear-gradient(225deg, #ff4a4a 0%, #6222fdba 179.25%);;
+    }
+    100% {
+    }
+}
+
+.finishedAnim {
+    animation: finished .3s 1 0s linear;
+}
+
+.hold {
+    border: 5px solid #eee;
+    opacity: 0.8;
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    border-top: 3px solid #8ed7ed;
+    box-shadow: inset 1px 1px 13px #00000038;
+}
+
+.holder {
+    border-radius: 20px;
+    background: linear-gradient(178deg, #958fee52, #ffffff12);
+}
+
+.create {
+    margin-right: 50px;
+}
+
+#btn-create {
+    background: linear-gradient(225deg, #ff4a4a 0%, #6222fdba 179.25%);
+    cursor: pointer;
+}
+
+.section {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

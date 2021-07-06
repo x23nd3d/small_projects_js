@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Drag & Drop | Project 2</title>
+</head>
+<body>
+<div class="create">
+    <button class="col-header" id="btn-create">Add item</button>
+</div>
+<div>
+    <div class="row">
+
+        <div class="section">
+            <div class="col-header start">Not set</div>
+            <div class="placeholder">
+                <div class="item" draggable="true">Clean room</div>
+            </div>
+            <div class="placeholder">
+                <div class="item" draggable="true">Drink Coffee</div>
+            </div>
+            <div class="placeholder">
+                <div class="item" draggable="true">Learn React</div>
+            </div>
+            <div class="placeholder"></div>
+        </div>
+
+        <div class="section">
+            <div class="col-header start">To do</div>
+            <div class="placeholder"></div>
+        </div>
+
+        <div class="section">
+            <div class="col-header progress">In progress</div>
+            <div class="placeholder"></div>
+        </div>
+
+        <div class="section">
+            <div class="col-header done">Completed</div>
+            <div class="placeholder"></div>
+        </div>
+    </div>
+
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
